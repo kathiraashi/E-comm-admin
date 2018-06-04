@@ -1,0 +1,80 @@
+.Order_Page{
+    width: 100%;
+    padding: 0px 30px;
+    background-color: #EBEDF3;
+    min-height: 700px;
+}
+
+.PageIdentity{
+    height:40px;
+    line-height:40px;
+    margin-top:3px;
+    margin-bottom:5px;
+}
+.PageIdentity .Identity{
+    color: #777777;
+    font-size: 13px;
+    font-weight: 600;
+}
+.PageIdentity .Identity span{
+    cursor: pointer;
+    color: #a90808;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.Left_Section {
+    background-color: #fff;
+}
+.Left_Section .List {
+    padding: 0px;
+    margin: 0px;
+}
+.Left_Section .List .Item:first-child {
+    border-top: none;
+}
+.Left_Section .List .Item {
+    list-style: none;
+    padding: 15px 20px 12px 20px;
+    margin: 0px;
+    border-top: 1px solid #ebedf3;
+    line-height: 1;
+    box-shadow: none;
+    text-shadow: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+.Left_Section .List .Item span {
+    font-size: 15px;
+    color: #777777;
+    font-weight: 600;
+}
+.Left_Section .List .Item:hover span {
+    color: #a90808
+}
+.Left_Section .List .Item.active {
+    background-color: #a90808;
+}
+.Left_Section .List .Item.active span{
+    color: #ffffff;
+}
+
+
+
+.form_Section{
+    background-color:white;
+    border-radius:5px;
+    padding:20px;
+    height:100%;
+    width:80%;
+}
+.form_Section input[type="text"]{
+    width:100%;
+    height:40px;
+    border-radius:5px;
+    border:1px solid #f1f1f1;
+    outline:none;
+    padding:5px;
+    
+}

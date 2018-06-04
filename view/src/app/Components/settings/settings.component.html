@@ -1,0 +1,56 @@
+<app-header></app-header>
+
+<div class="Order_Page">
+  <div class="PageIdentity container-fluid">
+    <div class="row">
+      <div class="col-sm-12 text-right">
+        <p class="Identity">
+          <span class="link">Home</span> / Food List</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="Left_Section">
+        <ul class="List">
+          <li class="Item" [ngClass]="{'active': Active_Tab === 'profile' }" (click)="Active_Tab_Change('profile')">
+            <span> Profile </span>
+          </li>
+          <li class="Item" [ngClass]="{'active': Active_Tab === 'Bank Details' }" (click)="Active_Tab_Change('Bank Details')">
+            <span>Bank Details </span>
+          </li>
+          <li class="Item" [ngClass]="{'active': Active_Tab === 'User Management' }" (click)="Active_Tab_Change('User Management')">
+            <span> User Management </span>
+          </li>
+          <li class="Item" [ngClass]="{'active': Active_Tab === 'Change Password' }" (click)="Active_Tab_Change('Change Password')">
+            <span> Change Password </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-10">
+      <div class="form_Section">
+        <form class="form" style="color:black;border-radius:5px;">
+          <div class="row">
+            <div class="col-sm-6">
+              Current Password:
+              <br>
+              <input name="name" type="text">
+            </div><br></div>
+            <div class="row">
+              <div class="col-sm-6">
+                New Password:
+              <input name="price" type="text">
+            </div><br></div>
+            <div class="row">
+         <div class="col-sm-6">
+           New Password Confirmation;
+              <input name="category" type="text">
+            </div>
+            </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
