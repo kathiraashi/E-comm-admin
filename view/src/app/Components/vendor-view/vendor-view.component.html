@@ -1,0 +1,860 @@
+<app-header></app-header>
+<div class="Order_Page">
+	<div class="PageIdentity container-fluid">
+		<div class="row">
+			<div class="col-sm-12 text-right">
+				<p class="Identity">
+				<span class="link">Home</span> / Promlotions</p>
+			</div>
+		</div>
+	</div>
+
+   <div class="row">
+      <div class="col-sm-2">
+          <div class="Left_Section">
+            <ul class="List">
+              <li class="Item" [ngClass]="{'active': Active_Tab === 'locations' }" (click)="Active_Tab_Change('locations')"> <span>Locations </span>  </li>
+              <li class="Item" [ngClass]="{'active': Active_Tab === 'Foodlist' }" (click)="Active_Tab_Change('Foodlist')"> <span> Foodlist</span>  </li>
+              <li class="Item" [ngClass]="{'active': Active_Tab === 'Paymenthistory' }" (click)="Active_Tab_Change('Paymenthistory')"> <span> Paymenthistory </span>  </li>
+              <li class="Item" [ngClass]="{'active': Active_Tab === 'orders' }" (click)="Active_Tab_Change('orders')"> <span> Orders</span>  </li>
+              <li class="Item" [ngClass]="{'active': Active_Tab === 'Promotions' }" (click)="Active_Tab_Change('Promotions')"> <span> Promotions</span>  </li>
+              <li class="Item" [ngClass]="{'active': Active_Tab === 'Reviews' }" (click)="Active_Tab_Change('Reviews')"> <span> Reviews</span>  </li>
+             </ul>
+          </div>
+        </div>
+      <div class="col-sm-10">
+          <form class="form frm-promotion" style="color:black;border-radius:5px;">
+              <div class="row">
+                  <div class="col-sm-6">
+                 </div>
+                  <div class="col-sm-6">
+                      <div class="Search_Section">
+                        <input type="text" placeholder="Search.." name="search">
+                        <i class="material-icons">search</i>
+                      </div>
+                    </div>
+              </div>
+          </form><br>
+         <div class="Table_Section">
+            <table *ngIf="Active_Tab ==='locations'" >
+                 <thead>
+                  <tr>
+                    <th>S.no</th>
+                    <th>Name</th>
+                    <th>Latitude</th>
+                    <th>longtitude</th>
+                    <th>Address</th>
+                    <th>Delivery Duration</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="S_no"> 1 </span>
+                    </td>
+                    <td>
+                      <span class="Main_Id"> Custom location Name </span>
+                    </td>
+                    <td>
+                      <span class="Date"> 36343472346</span>
+    
+                    </td>
+                    <td>
+                      <span class="Name_Style">546546567</span>
+                    </td>
+                    <td>
+                      <span class="User_Style"> 894 W Belmont Ave, Fresno, CALIFORNIA 93728, USA</span>
+    
+                    </td>
+                    <td>
+                      <span class="Price_Tag"> 4hrs</span>
+                    </td>
+    
+                    <td>
+                      <span class="Action_Section Bg_Danger">
+                        <i class="material-icons">delete</i>
+                      </span>
+                      <span class="Action_Section Bg_Info">
+                        <i class="material-icons">edit</i>
+                      </span>
+                      <span class="Action_Section Bg_Success">
+                        <i class="material-icons"> remove_red_eye </i>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="S_no"> 2 </span>
+                    </td>
+                    <td>
+                      <span class="Main_Id"> Custom location Name </span>
+                    </td>
+                    <td>
+                      <span class="Date"> 36343472346</span>
+    
+                    </td>
+                    <td>
+                      <span class="Name_Style">546546567</span>
+                    </td>
+                    <td>
+                      <span class="User_Style"> 894 W Belmont Ave, Fresno, CALIFORNIA 93728, USA</span>
+    
+                    </td>
+                    <td>
+                      <span class="Price_Tag">2hrs</span>
+                    </td>
+    
+                    <td>
+                        <span class="Action_Section Bg_Danger">
+                            <i class="material-icons">delete</i>
+                          </span>
+                          <span class="Action_Section Bg_Info">
+                            <i class="material-icons">edit</i>
+                          </span>
+                          <span class="Action_Section Bg_Success">
+                            <i class="material-icons"> remove_red_eye </i>
+                          </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="S_no"> 3 </span>
+                    </td>
+                    <td>
+                      <span class="Main_Id"> Custom location Name </span>
+                    </td>
+                    <td>
+                      <span class="Date"> 36343472346</span>
+    
+                    </td>
+                    <td>
+                      <span class="Name_Style">546546567</span>
+                    </td>
+                    <td>
+                      <span class="User_Style"> 894 W Belmont Ave, Fresno, CALIFORNIA 93728, USA</span>
+    
+                    </td>
+                    <td>
+                      <span class="Price_Tag">1hr</span>
+                    </td>
+    
+                    <td>
+                        <span class="Action_Section Bg_Danger">
+                            <i class="material-icons">delete</i>
+                          </span>
+                          <span class="Action_Section Bg_Info">
+                            <i class="material-icons">edit</i>
+                          </span>
+                          <span class="Action_Section Bg_Success">
+                            <i class="material-icons"> remove_red_eye </i>
+                          </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="S_no"> 4 </span>
+                    </td>
+                    <td>
+                      <span class="Main_Id"> Custom location Name </span>
+                    </td>
+                    <td>
+                      <span class="Date"> 36343472346</span>
+    
+                    </td>
+                    <td>
+                      <span class="Name_Style">546546567</span>
+                    </td>
+                    <td>
+                      <span class="User_Style">894 W Belmont Ave, Fresno, CALIFORNIA 93728, USA</span>
+    
+                    </td>
+                    <td>
+                      <span class="Price_Tag"> 4hrs</span>
+                    </td>
+    
+                    <td>
+                        <span class="Action_Section Bg_Danger">
+                            <i class="material-icons">delete</i>
+                          </span>
+                          <span class="Action_Section Bg_Info">
+                            <i class="material-icons">edit</i>
+                          </span>
+                          <span class="Action_Section Bg_Success">
+                            <i class="material-icons"> remove_red_eye </i>
+                          </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            <table *ngIf="Active_Tab ==='Foodlist'" >
+              <thead>
+                 <tr>
+                    <th>s.no</th>
+                    <th>Name</th>
+                    <th>Category </th>
+                    <th>price</th>
+                    <th>Incrediants</th>                     
+                    <th>Action</th>
+                 </tr>
+              </thead>
+              <tbody>
+                 <tr>
+                   <td>
+                     <span class="S_no"> 1 </span>
+                   </td>                     
+                    <td>
+                       <span class="Date"> fooditem1 </span>
+                       
+                    </td>
+                    <td> 
+                       <span class="Name_Style">CategoryName1 </span> 
+                    </td>
+                    <td>
+                       <span class="User_Style"> $45 </span>
+                    </td>
+                   <td>
+                     <span class="Date">Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs</span>
+                   </td>
+                   
+                  <td>
+                       
+                           <span class="Action_Section Bg_Danger">
+                             <i class="material-icons">delete</i>
+                           </span>
+                           <span class="Action_Section Bg_Info">
+                             <i class="material-icons">edit</i>
+                           </span>
+                           <span class="Action_Section Bg_Success">
+                             <i class="material-icons" > remove_red_eye </i>
+                           </span>
+                        
+                    </td>
+                 </tr>
+                 <tr>
+                  <td>
+                    <span class="S_no"> 2 </span>
+                  </td>                     
+                   <td>
+                      <span class="Date"> fooditem2 </span>
+                      
+                   </td>
+                   <td> 
+                      <span class="Name_Style">CategoryName2 </span> 
+                   </td>
+                   <td>
+                      <span class="User_Style"> $45 </span>
+                   </td>
+                  <td>
+                    <span class="Date">Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs</span>
+                  </td>
+                   <td>
+                    <span class="Action_Section Bg_Danger">
+                            <i class="material-icons">delete</i>
+                          </span>
+                          <span class="Action_Section Bg_Info">
+                            <i class="material-icons">edit</i>
+                          </span>
+                          <span class="Action_Section Bg_Success">
+                            <i class="material-icons"> remove_red_eye </i>
+                          </span>
+                       
+                   </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="S_no"> 3 </span>
+                  </td>                     
+                   <td>
+                      <span class="Date"> fooditem3 </span>
+                      
+                   </td>
+                   <td> 
+                      <span class="Name_Style">CategoryName3 </span> 
+                   </td>
+                   <td>
+                      <span class="User_Style"> $45 </span>
+                   </td>
+                  <td>
+                    <span class="Date">Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs</span>
+                  </td>
+                 <td>
+                      
+                          <span class="Action_Section Bg_Danger">
+                            <i class="material-icons">delete</i>
+                          </span>
+                          <span class="Action_Section Bg_Info">
+                            <i class="material-icons">edit</i>
+                          </span>
+                          <span class="Action_Section Bg_Success">
+                            <i class="material-icons" > remove_red_eye </i>
+                          </span>
+                       
+                   </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="S_no"> 4 </span>
+                  </td>                     
+                   <td>
+                      <span class="Date"> fooditem4 </span>
+                      
+                   </td>
+                   <td> 
+                      <span class="Name_Style">CategoryName4 </span> 
+                   </td>
+                   <td>
+                      <span class="User_Style"> $45 </span>
+                   </td>
+                  <td>
+                    <span class="Date">Cheese, tomatoes, shrimps, garlic, mussels, cockles, olives and italian herbs</span>
+                  </td>
+                 <td>
+                      
+                          <span class="Action_Section Bg_Danger">
+                            <i class="material-icons">delete</i>
+                          </span>
+                          <span class="Action_Section Bg_Info">
+                            <i class="material-icons">edit</i>
+                          </span>
+                          <span class="Action_Section Bg_Success">
+                            <i class="material-icons" > remove_red_eye </i>
+                          </span>
+                       
+                   </td>
+                </tr>
+              </tbody>
+           </table>
+           <table *ngIf="Active_Tab ==='Paymenthistory'" >
+           <thead>
+                <tr>
+                  <th>S.no</th>
+                  <th>Date</th>
+                  <th>Paid</th>
+                  <th>Unpaid </th>
+                  <th>Balance</th>
+                  <th>Credit</th>
+    
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>
+                        <span class="S_no">1</span>
+                      </td>
+                  <td>
+                    <span class="Date"> March 28,2017</span>
+                  </td>
+                  <td>
+                    <span class="Main_Id"> 12000 </span>
+                  </td>
+                  <td>
+                    <span class="Date"> 10000 </span>
+    
+                  </td>
+                  <td>
+                    <span class="Name_Style"> 10000</span>
+                  </td>
+                  <td>
+                      <span class="Name_Style"> 30000</span>
+                    </td>
+      
+                </tr>
+                <tr>
+                    <td>
+                        <span class="S_no">2</span>
+                      </td>
+                  <td>
+                    <span class="Date"> March 28,2017</span>
+                  </td>
+                  <td>
+                    <span class="Main_Id"> 12000 </span>
+                  </td>
+                  <td>
+                    <span class="Date"> 10000 </span>
+    
+                  </td>
+                  <td>
+                    <span class="Name_Style"> 10000</span>
+                  </td>
+                  <td>
+                      <span class="Name_Style"> 10000</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="S_no">3</span>
+                      </td>
+                  <td>
+                    <span class="Date"> March 28,2017</span>
+                  </td>
+                  <td>
+                    <span class="Main_Id"> 12000 </span>
+                  </td>
+                  <td>
+                    <span class="Date"> 10000 </span>
+    
+                  </td>
+                  <td>
+                    <span class="Name_Style"> 10000</span>
+                  </td>
+                  <td>
+                      <span class="Name_Style"> 10000</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="S_no">4</span>
+                      </td>
+                  <td>
+                    <span class="Date"> March 28,2017</span>
+                  </td>
+                  <td>
+                    <span class="Main_Id"> 12000 </span>
+                  </td>
+                  <td>
+                    <span class="Date"> 10000 </span>
+    
+                  </td>
+                  <td>
+                    <span class="Name_Style"> 10000</span>
+                  </td>
+                  <td>
+                      <span class="Name_Style"> 10000</span>
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+         <table *ngIf="Active_Tab ==='orders'" >
+          <thead>
+            <tr>
+              <th>S.no</th>
+              <th>Order No</th>
+              <th>Order Time </th>
+              <th>Location</th>
+              <th>Customer Info</th>
+              <th>Total Price</th>
+              <th>Delivery Time </th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="S_no"> 1 </span>
+              </td>
+              <td>
+                <span class="Main_Id"> Order-16694 </span>
+              </td>
+              <td>
+                <span class="Date"> May 29,2018 </span>
+                <span class="Time"> 3:30pm </span>
+              </td>
+              <td>
+                <span class="Name_Style"> location Display Name </span>
+              </td>
+              <td>
+                <span class="User_Style"> User Name </span>
+                <span class="User_Style"> User Email </span>
+              </td>
+              <td>
+                <span class="Price_Tag"> $34.00 </span>
+              </td>
+              <td>
+                <span class="Date"> May 29,2018 </span>
+                <span class="Time"> 3:30pm </span>
+              </td>
+              <td>
+                <span class="Status_Tag Bg_Info"> Processing </span>
+              </td>
+              <td>
+                <span class="Action_Section Bg_Info" (click)="ViewOrder()">
+                  <i class="material-icons"> remove_red_eye </i>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="S_no"> 2 </span>
+              </td>
+              <td>
+                <span class="Main_Id"> Order-16694 </span>
+              </td>
+              <td>
+                <span class="Date"> May 29,2018 </span>
+                <span class="Time"> 3:30pm </span>
+              </td>
+              <td>
+                <span class="Name_Style"> location Display Name </span>
+              </td>
+              <td>
+                <span class="User_Style"> User Name </span>
+                <span class="User_Style"> User Email </span>
+              </td>
+              <td>
+                <span class="Price_Tag"> $34.00 </span>
+              </td>
+              <td>
+                <span class="Date"> May 29,2018 </span>
+                <span class="Time"> 3:30pm </span>
+              </td>
+              <td>
+                <span class="Status_Tag Bg_warning"> Canceled </span>
+              </td>
+              <td>
+                <span class="Action_Section Bg_Info">
+                  <i class="material-icons"> remove_red_eye </i>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="S_no"> 3 </span>
+              </td>
+              <td>
+                <span class="Main_Id"> Order-16694 </span>
+              </td>
+              <td>
+                <span class="Date"> May 29,2018 </span>
+                <span class="Time"> 3:30pm </span>
+              </td>
+              <td>
+                <span class="Name_Style"> location Display Name </span>
+              </td>
+              <td>
+                <span class="User_Style"> User Name </span>
+                <span class="User_Style"> User Email </span>
+              </td>
+              <td>
+                <span class="Price_Tag"> $34.00 </span>
+              </td>
+              <td>
+                <span class="Date"> May 29,2018 </span>
+                <span class="Time"> 3:30pm </span>
+              </td>
+              <td>
+                <span class="Status_Tag Bg_Success"> Completed </span>
+              </td>
+              <td>
+                <span class="Action_Section Bg_Info">
+                  <i class="material-icons"> remove_red_eye </i>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="S_no"> 4 </span>
+              </td>
+              <td>
+                <span class="Main_Id"> Order-16694 </span>
+              </td>
+              <td>
+                <span class="Date"> May 29,2018 </span>
+                <span class="Time"> 3:30pm </span>
+              </td>
+              <td>
+                <span class="Name_Style"> location Display Name </span>
+              </td>
+              <td>
+                <span class="User_Style"> User Name </span>
+                <span class="User_Style"> User Email </span>
+              </td>
+              <td>
+                <span class="Price_Tag"> $34.00 </span>
+              </td>
+              <td>
+                <span class="Date"> May 29,2018 </span>
+                <span class="Time"> 3:30pm </span>
+              </td>
+              <td>
+                <span class="Status_Tag Bg_Info"> Processing </span>
+              </td>
+              <td>
+                <span class="Action_Section Bg_Info">
+                  <i class="material-icons"> remove_red_eye </i>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table *ngIf="Active_Tab ==='Promotions'" >
+       <thead>
+               <tr>
+                  <th>S.no</th>
+                  <th>Date</th>
+                  <th>Category </th>
+                  <th>Promo Code</th>
+                  <th>Validity</th>                     
+                  <th>Status</th>
+                  <th>Action</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                 <td>
+                   <span class="S_no"> 1 </span>
+                 </td>                     
+                  <td>
+                     <span class="Date"> May 29,2018 </span>
+                     
+                  </td>
+                  <td> 
+                     <span class="Name_Style"> Product Category Name </span> 
+                  </td>
+                  <td>
+                     <span class="User_Style"> CODE005 </span>
+                  </td>
+                 <td>
+                   <span class="Date">Jun 10,2018 </span>
+                 </td>
+                  <td>
+                     <span class="Status_Tag Bg_Success"> Active </span>
+                  </td>
+                  <td>
+                     
+                         <span class="Action_Section Bg_Danger">
+                           <i class="material-icons">delete</i>
+                         </span>
+                         <span class="Action_Section Bg_Info">
+                           <i class="material-icons">edit</i>
+                         </span>
+                         <span class="Action_Section Bg_Success">
+                           <i class="material-icons" (click)="ViewPromotion()"> remove_red_eye </i>
+                         </span>
+                      
+                  </td>
+               </tr>
+               <tr>
+                   <td>
+                     <span class="S_no"> 2 </span>
+                   </td>                     
+                    <td>
+                       <span class="Date"> May 29,2018 </span>
+                      
+                    </td>
+                    <td> 
+                       <span class="Name_Style"> Product Category Name </span> 
+                    </td>
+                    <td>
+                       <span class="User_Style"> CODE006 </span>
+                    </td>
+                   <td>
+                     <span class="Date">Jun 5,2018 </span>
+                   </td>
+                    <td>
+                       <span class="Status_Tag Bg_warning"> InActive </span>
+                    </td>
+                    <td>
+                     
+                           <span class="Action_Section Bg_Danger">
+                             <i class="material-icons">delete</i>
+                           </span>
+                           <span class="Action_Section Bg_Info">
+                             <i class="material-icons">edit</i>
+                           </span>
+                           <span class="Action_Section Bg_Success">
+                             <i class="material-icons"> remove_red_eye </i>
+                           </span>
+                         
+                    </td>
+                 </tr>
+                 <tr>
+                     <td>
+                       <span class="S_no"> 3 </span>
+                     </td>                     
+                      <td>
+                         <span class="Date"> May 29,2018 </span>
+                         
+                      </td>
+                      <td> 
+                         <span class="Name_Style"> Product Category Name </span> 
+                      </td>
+                      <td>
+                         <span class="User_Style"> CODE004 </span>
+                      </td>
+                     <td>
+                       <span class="Date">May 25,2018 </span>
+                     </td>
+                      <td>
+                         <span class="Status_Tag Bg_Danger"> Expired </span>
+                      </td>
+                      <td>
+                         
+                             <span class="Action_Section Bg_Danger">
+                               <i class="material-icons">delete</i>
+                             </span>
+                             <span class="Action_Section Bg_Info">
+                               <i class="material-icons">edit</i>
+                             </span>
+                             <span class="Action_Section Bg_Success">
+                               <i class="material-icons"> remove_red_eye </i>
+                             </span>
+                           
+                      </td>
+                   </tr>
+                   <tr>
+                       <td>
+                         <span class="S_no"> 4 </span>
+                       </td>                     
+                        <td>
+                           <span class="Date"> May 29,2018 </span>
+                           
+                        </td>
+                        <td> 
+                           <span class="Name_Style"> Product Category Name </span> 
+                        </td>
+                        <td>
+                           <span class="User_Style"> CODE008 </span>
+                        </td>
+                       <td>
+                         <span class="Date">Jun 10,2018 </span>
+                       </td>
+                        <td>
+                           <span class="Status_Tag Bg_Success"> Active </span>
+                        </td>
+                        <td>
+                          
+                               <span class="Action_Section Bg_Danger">
+                                 <i class="material-icons">delete</i>
+                               </span>
+                               <span class="Action_Section Bg_Info">
+                                 <i class="material-icons">edit</i>
+                               </span>
+                               <span class="Action_Section Bg_Success">
+                                 <i class="material-icons"> remove_red_eye </i>
+                               </span>
+                            
+                        </td>
+                     </tr>
+            </tbody>
+         </table>
+         <table *ngIf="Active_Tab ==='Reviews'" >
+            <thead>
+              <tr>
+                <th>S.no</th>
+                <th>Order Id</th>
+                <th>Date</th>
+                <th>Username</th>
+                <th>overall rating</th>
+                <th>review</th>
+             <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="S_no"> 1 </span>
+                </td>
+                <td>
+                  <span class="S_no">  Order-16694</span>
+                </td>
+                <td>
+                  <span class="Date"> mar 28,2017 </span>
+                </td>
+                <td>
+                  <span class="Date"> username1</span>
+
+                </td>
+                <td>
+                  <span class="Name_Style">3.5/5</span>
+                </td>
+                <td>
+                  <span class="User_Style">Lorem ipsum dolor sit amet consectetur adipisicing elit....</span>
+
+                </td>
+               <td>
+                <span class="Action_Section Bg_Success">
+                    <i class="material-icons"> remove_red_eye </i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="S_no"> 2 </span>
+                </td>
+                <td>
+                  <span class="S_no">Order-16694 </span>
+                </td>
+                <td>
+                  <span class="Date"> mar 28,2017 </span>
+                </td>
+                <td>
+                  <span class="Date"> username1</span>
+
+                </td>
+                <td>
+                  <span class="Name_Style">3.5/5</span>
+                </td>
+                <td>
+                  <span class="User_Style">Lorem ipsum dolor sit amet consectetur adipisicing elit...</span>
+
+                </td>
+
+                <td>
+                   <span class="Action_Section Bg_Success">
+                        <i class="material-icons"> remove_red_eye </i>
+                      </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="S_no"> 3 </span>
+                </td>
+                <td>
+                  <span class="S_no">  Order-16694  </span>
+                </td>
+                <td>
+                  <span class="Date"> mar 28,2017 </span>
+                </td>
+                <td>
+                  <span class="Date"> username1</span>
+
+                </td>
+                <td>
+                  <span class="Name_Style">3.5/5</span>
+                </td>
+                <td>
+                  <span class="User_Style">Lorem ipsum dolor sit amet consectetur adipisicing elit... </span>
+
+                </td>
+                <td>
+                  <span class="Action_Section Bg_Success">
+                        <i class="material-icons"> remove_red_eye </i>
+                      </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="S_no"> 4 </span>
+                </td>
+                <td>
+                  <span class="S_no"> Order-16694  </span>
+                </td>
+                <td>
+                  <span class="Date"> mar 28,2017 </span>
+                </td>
+                <td>
+                  <span class="Date"> username1</span>
+
+                </td>
+                <td>
+                  <span class="Name_Style">3.5/5</span>
+                </td>
+                <td>
+                  <span class="User_Style">Lorem ipsum dolor sit amet consectetur adipisicing elit..</span>
+
+                </td>
+
+                <td>
+                    <span class="Action_Section Bg_Success">
+                        <i class="material-icons"> remove_red_eye </i>
+                      </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+         </div>
+      </div>
+   </div>
+</div>

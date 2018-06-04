@@ -78,6 +78,7 @@
 .Search_Section{
     position:relative;
     margin-right: 32px;
+    background-color: #ffffff;
    }
 .Search_Section input{
     width: 100%;

@@ -3,8 +3,8 @@
     <div class="HeaderLogo">
       <img src="assets/images/basic/logo.png" alt="Logo" class="header-logo">
       <div class="logout">
-        <h5>
-          <a> Logout </a>
+     <h5>
+          <a [routerLink]="['/login-page']"> Logout </a>
         </h5>
        
       </div>
@@ -17,6 +17,16 @@
             <span class="pull-left"> &nbsp; Dashboard </span>
           </a>
         </li>
+        <li class="menu-list">
+            <a [routerLink]="['/UserList']">
+              <span class="pull-left"> &nbsp; UserList</span>
+            </a>
+          </li>
+          <li class="menu-list">
+              <a [routerLink]="['/VendorList']">
+                <span class="pull-left"> &nbsp; VendorList </span>
+              </a>
+            </li>
         <li class="menu-list">
           <a [routerLink]="['/FoodList']">
             <span class="pull-left"> &nbsp; Food List </span>
@@ -53,7 +63,7 @@
           </a>
         </li>
         <li class="menu-list">
-          <a [routerLink]="['']">
+          <a [routerLink]="['/reviews']">
             <span class="pull-left"> &nbsp; Reviews </span>
           </a>
         </li>

@@ -19,6 +19,11 @@ import { ReportsComponent } from './Components/reports/reports.component';
 import { SettingsComponent } from './Components/settings/settings.component';
 import { PromotionsComponent } from './Components/promotions/promotions.component';
 import { FoodListComponent } from './Components/food-list/food-list.component';
+import { UserListComponent } from './Components/user-list/user-list.component';
+import { VendorListComponent } from './Components/vendor-list/vendor-list.component';
+import { VendorViewComponent } from './Components/vendor-view/vendor-view.component';
+import { ReviewsComponent } from './Components/reviews/reviews.component';
+import { LoginPageComponent } from './Components/login-page/login-page.component';
 
 const appRoutes: Routes = [
     { path: '',
@@ -33,6 +38,18 @@ const appRoutes: Routes = [
             animation: { value: 'Dashboard', }
         }
     },
+    { path: 'UserList',
+    component: UserListComponent,
+    data: {
+        animation: { value: 'UserList', }
+    }
+},
+{ path: 'VendorList',
+component: VendorListComponent,
+data: {
+    animation: { value: 'VendorList', }
+}
+},
     { path: 'FoodList',
         component: FoodListComponent,
         data: {
@@ -74,7 +91,25 @@ const appRoutes: Routes = [
         data: {
             animation: { value: 'Settings', }
         }
+    },
+    { path: 'Vendor_View',
+        component: VendorViewComponent,
+        data: {
+            animation: { value: 'Vendor_View', }
+        }
+    },
+    { path: 'reviews',
+    component: ReviewsComponent,
+    data: {
+        animation: { value: 'reviews', }
     }
+},
+{ path: 'login-page',
+component: LoginPageComponent,
+data: {
+    animation: { value: 'login-page', }
+}
+}
 ];
 
 @NgModule({
