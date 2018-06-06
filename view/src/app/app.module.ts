@@ -35,6 +35,7 @@ import { VendorListComponent } from './Components/vendor-list/vendor-list.compon
 import { VendorViewComponent } from './Components/vendor-view/vendor-view.component';
 import { ReviewsComponent } from './Components/reviews/reviews.component';
 import { LoginPageComponent } from './Components/login-page/login-page.component';
+import { UserViewComponent } from './Components/user-view/user-view.component';
 
 
 
@@ -61,7 +62,8 @@ import { LoginPageComponent } from './Components/login-page/login-page.component
     VendorListComponent,
     VendorViewComponent,
     ReviewsComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    UserViewComponent
   ],
   imports: [
     BrowserModule,

@@ -1,69 +1,61 @@
-.form_section{
-width:80%;
-height:100%;
-background-color:#7D8792;
-padding:20px;
-margin-top:150px;
-margin-left:150px;
+.login-section
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left: 0px;
+    right:0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: #E6ECF0
 }
-.form_section .form{
-    width:50%;
-    height:50%;
-    border:4px solid floralwhite;
-    border-radius:5px;
-    background-color:#C7C8CC;
-    padding:50px;
-    margin-left:220px;
-  position: relative;
-  
-}
-.form_section .form input[type="text"]{
-    color:#D1DBD9;
-    border:1px solid #F5F5F5;
-    padding:10px;
-    width:80%;
-    margin-left:40px;
-    border-radius:10px;
-    outline:none;
-}
-.form_section .form input[type="password"]{
-    color:#D1DBD9;
-    border:1px solid #F5F5F5;
-    padding:10px;
-    width:80%;
-    margin-left:40px;
-    border-radius:10px;
-    outline:none;
-}
-.form_section .form .button-style{
-    width:80%;
-    height:50px;
-  border:1px solid #00C6FF;
-    background-color:#00C6FF;
-    color:white;
-    outline:none;
-    margin-left:40px;
-    border-radius:10px;
 
-  
-}
-.userimage{
-    margin-left:110px;
-}
-.userimage img{
-    width:100px;
-    height:100px;
-}
-.button1-style{
-    width:250px;
-    height:50px;
-    margin-left:50px;
-    padding: 10px;
-    background-color: #00C6FF;
-    border: 1px solid #00C6FF;
-    border-radius: 10px;
-    color: white;
+.form-section .form{
+position:absolute;
+height:340px;
+width:700px;
+background-color:#FFFFFF;
+left: 0px;
+ right:0px;
+ top: 0px;
+ bottom: 0px;
+ margin:auto;
+ margin-top: 20px;
+ }
+.form-section input[type="text"]{
     outline:none;
-    position: absolute;
-    top: -15px;
+    color:black;
+    padding:5px; 
+    width: 50%;
+    height: 35px;
+border-radius:5px;
+border:1px solid #E6ECF0;
+margin-left: 40px;
+
+
 }
+.form-section input[type="password"]{
+    outline:none;
+    color:black;
+    padding:5px;
+    width: 50%;
+    height: 35px;
+      border-radius:5px;
+      border:1px solid #E6ECF0;
+      margin-left: 40px
+}
+.form-section input::placeholder{
+    color:#c1baba;
+}
+.login-design{
+
+    background-color: #1D943B;
+    color: white;
+   width: 50%;
+    height: 30px;
+    outline: none;
+    border: 1px solid #1D943B;
+    margin-left: 40px
+   
+}
+

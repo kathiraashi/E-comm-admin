@@ -9,6 +9,35 @@
       </div>
     </div>
   </div>
+  <div class="container-fluid">
+    <div class="row">
+  <div class="col-sm-2">
+      <div class="Left_Section">
+        <ul class="List">
+          <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_1' }" (click)="Active_Tab_Change('Category_1')"> <span> Category_1 </span>  </li>
+          <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_2' }" (click)="Active_Tab_Change('Category_2')"> <span> Category_2 </span>  </li>
+          <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_3' }" (click)="Active_Tab_Change('Category_3')"> <span> Category_3 </span>  </li>
+          <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_4' }" (click)="Active_Tab_Change('Category_4')"> <span> Category_4 </span>  </li>
+          <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_5' }" (click)="Active_Tab_Change('Category_5')"> <span> Category_5 </span>  </li>
+          <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_6' }" (click)="Active_Tab_Change('Category_6')"> <span> Category_6 </span>  </li>
+          <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_7' }" (click)="Active_Tab_Change('Category_7')"> <span> Category_7 </span>  </li>
+          <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_8' }" (click)="Active_Tab_Change('Category_8')"> <span> Category_8 </span>  </li>
+          <li class="Item" [ngClass]="{'active': Active_Tab === 'Category_9' }" (click)="Active_Tab_Change('Category_9')"> <span> Category_9 </span>  </li>
+        </ul>
+      </div>
+    </div>
+  <div class="col-sm-10">
+      <div class="row">
+          <div class="col-sm-6">
+        </div>
+          <div class="col-sm-6">
+            <div class="Search_Section">
+              <input type="text" placeholder="Search.." name="search">
+              <i class="material-icons">search</i>
+            </div>
+          </div>
+        </div>
+        <br>
   <div class="row">
       <div class="col-sm-3">
         <div class="card card-body" [routerLink]="['/Vendor_View']">
@@ -127,7 +156,8 @@
           </div>
         </div>
       </div>
-
+</div>>
+    </div>
     </div>
 </div>
 

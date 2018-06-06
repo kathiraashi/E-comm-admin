@@ -2,15 +2,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 
-import { CommonModule} from '@angular/common';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { HttpClientModule } from '@angular/common/http';
-
-
-import { AppComponent } from './app.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { OrdersComponent } from './Components/orders/orders.component';
 import { PaymentsComponent } from './Components/payments/payments.component';
@@ -24,6 +15,7 @@ import { VendorListComponent } from './Components/vendor-list/vendor-list.compon
 import { VendorViewComponent } from './Components/vendor-view/vendor-view.component';
 import { ReviewsComponent } from './Components/reviews/reviews.component';
 import { LoginPageComponent } from './Components/login-page/login-page.component';
+import { UserViewComponent } from './Components/user-view/user-view.component';
 
 const appRoutes: Routes = [
     { path: '',
@@ -108,6 +100,12 @@ data: {
 component: LoginPageComponent,
 data: {
     animation: { value: 'login-page', }
+}
+},
+{ path: 'user-view',
+component: UserViewComponent,
+data: {
+    animation: { value: 'user-view', }
 }
 }
 ];

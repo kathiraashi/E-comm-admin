@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VendorListComponent implements OnInit {
 
+  Active_Tab = 'Category_1' ;
   constructor() { }
 
   ngOnInit() {
   }
-
+  Active_Tab_Change(name) {
+    this.Active_Tab = name;
+  }
 }
