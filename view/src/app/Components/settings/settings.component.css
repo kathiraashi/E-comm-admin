@@ -18,7 +18,7 @@
 }
 .PageIdentity .Identity span{
     cursor: pointer;
-    color: #a90808;
+    color: #368ee0;
     font-weight: 600;
     font-size: 15px;
 }
@@ -51,10 +51,10 @@
     font-weight: 600;
 }
 .Left_Section .List .Item:hover span {
-    color: #a90808
+    color: #368ee0
 }
 .Left_Section .List .Item.active {
-    background-color: #a90808;
+    background-color: #368ee0;
 }
 .Left_Section .List .Item.active span{
     color: #ffffff;

@@ -18,7 +18,7 @@
 }
 .PageIdentity .Identity span{
     cursor: pointer;
-    color: #a90808;
+    color: #368ee0;
     font-weight: 600;
     font-size: 15px;
 }
@@ -38,10 +38,10 @@ img{
     width: 100%;
 }
 .Table_Section table thead {
-    border: 1px #a90808;
+    border: 1px #368ee0;
     line-height: 40px;
     text-align: center;
-    background-color: #a90808;
+    background-color: #368ee0;
     color: #ffffff;
     font-size: 14px;
     letter-spacing: 0.5px;
@@ -167,9 +167,9 @@ img{
 }
 .bg-green
 {
-    border: 1px solid #a90808;
+    border: 1px solid #368ee0;
     background: #EBEDF3;
-    color: #a90808;
+    color: #368ee0;
     font-weight: 600;
     font-size: 15px;
     letter-spacing: 0.6px;

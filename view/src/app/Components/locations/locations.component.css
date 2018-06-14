@@ -18,15 +18,15 @@
 }
 .PageIdentity .Identity span{
     cursor: pointer;
-    color: #a90808;
+    color: #368ee0;
     font-weight: 600;
     font-size: 15px;
 }
 .Create_Button{
     margin-left: 33px;
     border-radius: 0px;
-    border: 1px solid #a90808;
-    color: #a90808;
+    border: 1px solid #368ee0;
+    color: #368ee0;
     font-weight: 600;
     font-size: 15px;
     letter-spacing: 0.6px;
@@ -92,7 +92,7 @@
     font-weight: 600;
 }
 .Left_Section .List .Item:hover span{
-    color: #a90808
+    color: #368ee0
 }
 
 
@@ -104,10 +104,10 @@
     width: 100%;
 }
 .Table_Section table thead {
-    border: 1px #a90808;
+    border: 1px #368ee0;
     line-height: 40px;
     text-align: center;
-    background-color: #a90808;
+    background-color: #368ee0;
     color: #ffffff;
     font-size: 14px;
     letter-spacing: 0.5px;

@@ -20,7 +20,7 @@
 }
 .PageIdentity .Identity span{
     cursor: pointer;
-    color: #a90808;
+    color: #368ee0;
     font-weight: 600;
     font-size: 15px;
 }
@@ -56,10 +56,10 @@
     font-weight: 600;
 }
 .Left_Section .List .Item:hover span {
-    color: #a90808
+    color: #368ee0
 }
 .Left_Section .List .Item.active {
-    background-color: #a90808;
+    background-color: #368ee0;
 }
 .Left_Section .List .Item.active span{
     color: #ffffff;
@@ -67,8 +67,8 @@
 .Create_Button{
     margin-left: 33px;
     border-radius: 0px;
-    border: 1px solid #a90808;
-    color: #a90808;
+    border: 1px solid #368ee0;
+    color: #368ee0;
     font-weight: 600;
     font-size: 15px;
     letter-spacing: 0.6px;
@@ -152,7 +152,7 @@
 .FoodList .FoodItem .Item_Info .Text_Section .Price {
     margin: 0px;
     font-size: 16px;
-    color: #a90808;
+    color: #368ee0;
 }
 .FoodList .FoodItem .Item_Info .Action_Section span {
     display: flex;

@@ -18,7 +18,7 @@
 }
 .PageIdentity .Identity span{
     cursor: pointer;
-    color: #a90808;
+    color: #368ee0;
     font-weight: 600;
     font-size: 15px;
 }
@@ -51,10 +51,10 @@
     font-weight: 600;
 }
 .Left_Section .List .Item:hover span {
-    color: #a90808
+    color: #368ee0
 }
 .Left_Section .List .Item.active {
-    background-color: #a90808;
+    background-color: #368ee0;
 }
 .Left_Section .List .Item.active span{
     color: #ffffff;
@@ -69,10 +69,10 @@
     width: 100%;
 }
 .Table_Section table thead {
-    border: 1px #a90808;
+    border: 1px #368ee0;
     line-height: 40px;
     text-align: center;
-    background-color: #a90808;
+    background-color: #368ee0;
     color: #ffffff;
     font-size: 14px;
     letter-spacing: 0.5px;
